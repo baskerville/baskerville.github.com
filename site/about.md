@@ -6,7 +6,7 @@ order: 4
 
 ![avatar]({{ home }}/img/avatar.png)
 
-Baskerville is a human being living on planet earth.
+Baskerville is a human being living on planet Earth.
 
 He enjoys learning and creating.
 

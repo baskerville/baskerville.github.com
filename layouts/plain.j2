@@ -1,0 +1,9 @@
+{% extends 'base.j2' %}
+{% block title %}{% if item.title %}{{ item.title }} — {% endif %}{% endblock %}
+{% block content %}
+<div id="content">
+  <article>
+    {{ item.content }}
+  </article>
+</div>
+{% endblock %}

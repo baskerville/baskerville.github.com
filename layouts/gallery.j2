@@ -1,0 +1,41 @@
+{% extends 'base.j2' %}
+{% block title %}{{ item.title }} — {% endblock %}
+{% block content %}
+<div id="content">
+{% if item.has_brothers() %}
+  <section class="arrows">
+    <ul>
+      <li>
+      {% if item.prev %}
+        <a href="{{ item.prev.relurl(item) }}" rel="prev">
+          <img src="{{home}}/img/left_arrow.png" alt="Previous page"/>
+        </a>
+      {% else %}
+        <img src="{{home}}/img/blank.png" alt=""/>
+      {% endif %}
+      </li>
+      <li>
+      {% if item.next %}
+        <a href="{{ item.next.relurl(item) }}" rel="next">
+          <img src="{{home}}/img/right_arrow.png" alt="Next page"/>
+        </a>
+      {% else %}
+        <img src="{{home}}/img/blank.png" alt=""/>
+      {% endif %}
+      </li>
+    </ul>
+  </section>
+{% endif %}
+  <section class="thumbnails">
+    <ul>
+    {% for child in item.children %}
+      <li>
+          <a href="{{ child.relurl(item) }}">
+            <img src="{{ (home, child.thumbnail)|join('/') }}" alt="{{ child.title|default('Untitled') }}"/>
+          </a>
+      </li>
+    {% endfor %}
+    </ul>
+  </section>
+</div>
+{% endblock %}

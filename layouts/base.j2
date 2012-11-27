@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <script src="{{ home }}/js/elucidate_mailto.js"></script>
+    <link rel="shortcut icon" href="{{ home }}/img/spider.ico"/>
+    <link rel="stylesheet" href="{{ home }}/css/reset.css"/>
+    <link rel="stylesheet" href="{{ home }}/css/style.css"/>
+    <script>
+      onload = elucidate_mailto;
+    </script>
+    <title>{% block title %}{% endblock %}{{ title }}</title>
+  </head>
+  <body>
+    <header id="header">
+      <h1 id="home" class="hide-text">
+        <span class="hide-text">
+          {{ title }}
+        </span>
+      </h1>
+      <nav id="navigation">
+        <ul>
+        {% for page in root.children|sort(attribute='order') %}
+          <li>
+          {% if page in trail %}
+            {{ page.title }}
+          {% else %}
+            <a href="{{ page.relurl(item) }}" {% if page.id %} id="{{ page.id }}" {% endif %}>
+              {{ page.title }}
+            </a>
+          {% endif %}
+          </li>
+        {% endfor %}
+        </ul>
+      </nav>
+    </header>
+    {% block content %}
+    {% endblock %}
+  </body>
+</html>

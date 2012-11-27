@@ -1,0 +1,3 @@
+---
+layout: base.j2
+---

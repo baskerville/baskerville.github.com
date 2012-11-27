@@ -1,0 +1,60 @@
+{% extends 'base.j2' %}
+{% block title %}{{ item.title|default('Untitled') }} — {% endblock %}
+{% block content %}
+<div id="content">
+  <section class="arrows">
+    <ul>
+      <li>
+      {% if item.parent %}
+        <a href="{{ item.parent.relurl(item) }}">
+          <img src="{{home}}/img/up_arrow.png" alt="Go up"/>
+        </a>
+      {% else %}
+        <img src="{{home}}/img/blank.png" alt=""/>
+      {% endif %}
+      </li>
+      <li>
+      {% if item.prev %}
+        <a href="{{ item.prev.relurl(item) }}" rel="prev">
+            <img src="{{home}}/img/left_arrow.png" alt="Previous image"/>
+        </a>
+      {% else %}
+        <img src="{{home}}/img/blank.png" alt=""/>
+      {% endif %}
+      </li>
+      <li>
+      {% if item.next %}
+        <a href="{{ item.next.relurl(item) }}" rel="next">
+            <img src="{{home}}/img/right_arrow.png" alt="Next image"/>
+        </a>
+      {% else %}
+        <img src="{{home}}/img/blank.png" alt=""/>
+      {% endif %}
+      </li>
+      {% if item.has_brothers()  %}
+      <li class="pagenum">
+        {{ item.mark }} / {{ item.parent.children|length }}
+      </li>
+      {% endif %}
+    </ul>
+  </section>
+  <section class="image">
+  {% if item.next %}
+    <a href="{{ item.next.relurl(item) }}"><img src="{{ (home, item.asset)|join('/') }}" alt="Next image"/></a>
+  {% else %}
+    <img src="{{ (home, item.asset)|join('/') }}" alt="Next image"/>
+  {% endif %}
+    <footer>
+      <div class="meta">
+      {% if item.title %}
+        <p>{{ item.title }}</p>
+      {% endif %}
+      {% if item.date %}
+        <p>{{ item.date }}</p>
+      {% endif %}
+      </div>
+      {{ item.content }}
+    </footer>
+  </section>
+</div>
+{% endblock %}

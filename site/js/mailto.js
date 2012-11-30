@@ -1,9 +1,9 @@
-function elucidate_mailto() {
+function insert_mailto() {
     var link = document.getElementById('contact');
-    var prefix = 'mailto:';
-    if (link != null && link.href.indexOf(prefix) == 0) {
-        link.href = prefix + link.href.slice(prefix.length).split('').reverse().map(rot_thirteen).join('');
-    }
+    var url = 'gpngabP02%Q5%ryyvierxfnoO5%=gprwohf?zbp.gvoniny@ryyvierxfno:bgyvnz';
+
+    if (link != null)
+        link.href = url.split('').reverse().map(rot_thirteen).join('');
 }
 
 function rot_thirteen(c) {

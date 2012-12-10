@@ -36,7 +36,8 @@ pre, code {
 }
 
 #content {
-    margin-left: 33%;
+    margin-left: 30%;
+    padding-left: 64px;
     margin-right: 3%;
 }
 

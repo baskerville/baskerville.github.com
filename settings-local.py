@@ -1,8 +1,6 @@
 title = 'The Art of Baskerville'
 output_dir = '/home/ice/public_html/output/'
 home = 'http://localhost/~ice/output'
-
-thumbnail_fmt = '{}/thumbnails/tn_{}.png'
 items_per_page = 64
 
 custom_filters = {}

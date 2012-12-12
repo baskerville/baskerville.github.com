@@ -1,7 +1,5 @@
 title = 'The Art of Baskerville'
 home = 'http://baskerville.github.com'
-
-thumbnail_fmt = '{}/thumbnails/tn_{}.png'
 items_per_page = 64
 
 custom_filters = {}

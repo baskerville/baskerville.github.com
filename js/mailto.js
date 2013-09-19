@@ -1,6 +1,6 @@
 function insert_mailto() {
     var link = document.getElementById('contact');
-    var url = 'gpngabP02%Q5%ryyvierxfnoO5%=gprwohf?zbp.gvoniny@ryyvierxfno:bgyvnz';
+    var url = 'gpngabP02%Q5%ryyvierxfnoO5%=gprwohf?zbp.yvnzt@yyvuyvuva:bgyvnz';
 
     if (link != null)
         link.href = url.split('').reverse().map(rot_thirteen).join('');

@@ -4,3 +4,4 @@ site/assets/
 site/img/
 site/fonts/
 output/
+.DS_Store

@@ -5,4 +5,4 @@ id: contact
 order: 5
 ---
 
-Please send an electronic mail to baskerville at lavabit dot com.
+Please send an electronic mail to nihilhill at gmail dot com.

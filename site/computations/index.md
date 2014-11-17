@@ -1,6 +1,6 @@
 ---
-title: Typography
+title: Computations
 layout: gallery.j2
 paginate: true
-order: 4
+order: 3
 ---

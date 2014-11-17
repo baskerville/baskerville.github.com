@@ -7,4 +7,4 @@ thumbnail: assets/handmade/thumbnails/tn_img16.jpg
 title: Day Ballet
 ---
 
-
+Graphics tablet used within MyPaint.

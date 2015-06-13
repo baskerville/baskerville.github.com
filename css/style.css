@@ -46,7 +46,7 @@ pre, code {
 }
 
 #home {
-    background-image: url("http://baskerville.github.com/img/ab-logo.png");
+    background-image: url("//baskerville.github.io/img/ab-logo.png");
     background-repeat: no-repeat;
     width: 233px;
     height: 18px;
@@ -114,11 +114,11 @@ pre, code {
 
 @font-face {
     font-family: 'Source Sans Pro';
-    src: url('http://baskerville.github.com/fonts/SourceSansPro-Regular-webfont.eot');
-    src: url('http://baskerville.github.com/fonts/SourceSansPro-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-    url('http://baskerville.github.com/fonts/SourceSansPro-Regular-webfont.woff') format('woff'),
-    url('http://baskerville.github.com/fonts/SourceSansPro-Regular-webfont.ttf') format('truetype'),
-    url('http://baskerville.github.com/fonts/SourceSansPro-Regular-webfont.svg#SourceSansProRegular') format('svg');
+    src: url('//baskerville.github.io/fonts/SourceSansPro-Regular-webfont.eot');
+    src: url('//baskerville.github.io/fonts/SourceSansPro-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('//baskerville.github.io/fonts/SourceSansPro-Regular-webfont.woff') format('woff'),
+    url('//baskerville.github.io/fonts/SourceSansPro-Regular-webfont.ttf') format('truetype'),
+    url('//baskerville.github.io/fonts/SourceSansPro-Regular-webfont.svg#SourceSansProRegular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
